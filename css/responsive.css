@@ -1,0 +1,114 @@
+@media (min-width:1400px) and (max-width:1699px){.widget-box{padding:30px;}
+.form-body{padding:30px;}
+}
+@media (min-width:1200px) and (max-width:1399px){.appointment-result .form-control{width:135px;}
+.widget-box{padding:30px;}
+.form-body{padding:30px;}
+.form-header > h3{font-size:17px;}
+.dob-date{padding-left:8px !important;padding-right:8px !important;}
+.dob-month{padding-right:8px !important;}
+.dob-year{padding-left:8px !important;}
+}
+@media (min-width:1025px) and (max-width:1199px){.widget-box{padding:20px;height:498px;}
+.form-body{padding:20px;}
+.appointment-result .form-control{width:135px;}
+.form-header > h3{font-size:14px;}
+.app-btn .btn{font-size:13px;padding:12px;}
+.time-picker{padding-left:0 !important;}
+.selected-timepick{padding-left:0 !important;}
+.dob-date{padding-left:5px !important;}
+.dob-month{padding-right:5px !important;}
+.dob-year .form-group{margin-bottom:0;}
+.page-title-section{margin:-20px -20px 20px;}
+.content{padding:20px;}
+.modal.doctor-modal .modal-dialog{margin:0 auto;width:900px;}
+.doctor-widget {padding: 20px;}
+}
+@media (min-width:1200px){.modal.doctor-modal .modal-dialog{margin:0 auto;width:997px;}
+}
+@media (min-width:992px) and (max-width:1024px){.widget-box{padding:15px;height:477px;}
+.form-body{padding:15px;}
+.content{padding:15px;}
+.page-title-section{margin:-15px -15px 15px;}
+.sidebar{width:250px;}
+.profile-widget{padding:20px;}
+.content-wrap{margin-left:250px;}
+.navbar-custom{margin-left:250px;}
+.header .header-left{width:250px;}
+.time-picker{padding-left:0 !important;}
+.selected-timepick{padding-left:0 !important;}
+.form-header > h3{font-size:15px;}
+.dob-date{padding-left:5px !important;}
+.dob-month{padding-right:5px !important;}
+.dob-year .form-group{margin-bottom:0;}
+.modal.doctor-modal .modal-dialog{margin:0 auto;width:900px;}
+.app-btn .btn{padding:5px 12px;}
+.doctor-widget {padding: 20px;}
+}
+@media (min-width:768px) and (max-width:991px){.appointment-result .form-control{width:116px;}
+.widget-box{height:475px;padding:15px;}
+.form-body{padding:15px;}
+.sidebar{width:200px;}
+.profile-widget{padding:20px;}
+.content-wrap{margin-left:200px;}
+.content{padding:15px;}
+.navbar-custom{margin-left:200px;}
+.header .header-left{width:200px;}
+.page-title-section{margin:-15px -15px 15px;}
+.time-list > li{font-size:15px;}
+.time-picker{padding-left:0 !important;}
+.apt-select{width:66.6667% !important;}
+.selected-timepick{padding-left:0 !important;}
+.apt-select .Zebra_DatePicker .dp_header .dp_caption{font-size:17px;}
+.apt-select .appointment-time > h3{font-size:20px;}
+.form-header > h3{font-size:13px;}
+.dob-date{padding-left:5px !important;}
+.dob-month{padding-right:5px !important;}
+.dob-year .form-group{margin-bottom:0;}
+.app-btn .btn{font-size:13px;font-weight:normal;padding:6px;text-transform:inherit;}
+.doctor-widget {padding: 10px;}
+}
+@media only screen and (min-width:480px) and (max-width:767px){.appointment-form{margin-top:30px;}
+.profile-img{float:left;margin-bottom:0;text-align:left;width:200px;margin-bottom:15px;}
+.navbar-custom{height:80px;}
+.navbar-custom h3{padding:15px;}
+.widget-box{padding:30px;height:auto;}
+.form-body{padding:30px;}
+.appointment-result .form-control{font-size:14px;width:106px;}
+.doctor-det{display:inline-block;}
+.doctor-widget {padding: 15px;}
+}
+@media (max-width:767px){.widget-box{height:auto;}
+.sidebar{position:relative;width:100%;}
+.content-wrap{margin-left:0px !important;}
+.header-left{width:70px !important;}
+.navbar-custom{margin-left:70px !important;}
+body{overflow-x:hidden;}
+.modal.doctor-modal .modal-dialog{margin:0 auto;width:95%;}
+}
+@media only screen and (min-width:481px) and (max-width:767px){}
+@media only screen and (max-width:479px){.appointment-form{margin-top:15px;}
+.calander-picker {padding-right:0 !important;}
+.form-body{padding:15px;}
+.widget-box{padding:15px;}
+.navbar-custom{height:80px;}
+.navbar-custom h3{font-size:18px;padding:20px 0;}
+.page-title-section{height:auto;margin:-15px -15px 15px;}
+.content{padding:15px;}
+.profile-widget{padding:20px 56px;}
+.appointment-time > h3{font-size:17px;}
+.doctor-address {
+    margin-bottom: 10px;
+}
+.doctor-info {
+    margin-bottom: 10px;
+}
+}
+@media only screen and (min-width:320px) and (max-width:480px){}
+@media (max-width:410px){
+	.time-list > li {
+    font-size: 14px;
+}
+.Zebra_DatePicker .dp_header .dp_caption {
+    font-size: 14px;}
+}

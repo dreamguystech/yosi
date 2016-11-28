@@ -1,0 +1,52 @@
+@media (min-width:1200px){.form-body{padding:14px 30px 20px;}
+.form-header > h3{padding:10px 14px;}
+.app-btn .btn{padding:7px 12px;}
+.form-body .form-group{margin-bottom:10px;}
+.widget-box{height:459px;}
+.Zebra_DatePicker .dp_daypicker th{height:40px;}
+.Zebra_DatePicker .dp_daypicker td{height:40px;}
+.timepicker .slimScrollDiv{height:272px !important;}
+.timepicker .slimscroll{height:272px !important;}
+}
+@media (min-height:550px) and (max-height:599px){.Zebra_DatePicker .dp_daypicker th{height:37px;}
+.Zebra_DatePicker .dp_daypicker td{height:37px;}
+.timepicker .slimScrollDiv{height:250px !important;}
+.timepicker .slimscroll{height:250px !important;}
+.form-header > h3{padding:10px;}
+.form-body .form-group{margin-bottom:0;}
+.form-body{padding:10px 15px !important;}
+.widget-box{height:391px !important;}
+.appointment-time > h3{font-size:22px;}
+.appointment-time > p{margin-bottom:10px;}
+.page-title-section{height:48px;padding:15px;}
+.app-btn .btn{margin-top:8px;}
+}
+@media (min-height:651px) and (max-height:745px){}
+@media (min-width:1400px) and (max-width:1699px){.form-body{padding:14px 30px 20px;}
+.form-header > h3{padding:10px 14px;}
+.app-btn .btn{padding:7px 12px;}
+.form-body .form-group{margin-bottom:10px;}
+.widget-box{height:459px;}
+.Zebra_DatePicker .dp_daypicker th{height:41px;}
+.Zebra_DatePicker .dp_daypicker td{height:41px;}
+.timepicker .slimScrollDiv{height:279px !important;}
+.timepicker .slimscroll{height:279px !important;}
+}
+@media (min-width:1200px) and (max-width:1399px){.app-btn .btn{padding:7px 12px;}
+.form-header > h3{padding:10px 14px;}
+.form-body .form-group{margin-bottom:6px;}
+.widget-box{height:457px;}
+.Zebra_DatePicker .dp_daypicker th{height:40px;}
+.Zebra_DatePicker .dp_daypicker td{height:40px;}
+.timepicker .slimScrollDiv{height:272px !important;}
+.timepicker .slimscroll{height:272px !important;}
+.form-body{padding:24px 30px;}
+}
+@media (min-width:1025px) and (max-width:1199px){.widget-box{height:479px;}
+.form-body .form-group{margin-bottom:13px;}
+.app-btn .btn{padding:7px 12px;}
+}
+@media (min-width:1200px){}
+@media (min-width:992px) and (max-width:1024px){}
+}
+@media (min-width:768px) and (max-width:991px){}
