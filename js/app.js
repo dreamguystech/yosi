@@ -1,7 +1,7 @@
-$(document).ready(function(e) { 
+$(document).ready(function(e) {
 	$(".loading").css('display','block');
 	$.ajax({
-        url:'https://dev.yosicare.com/calendarpage/mobile-app.php',
+        url:'https://dev.yosicare.com/calendarpage/mobile-app.php?page=get_practice',
         type:'POST',
         data:'',
 		dataType:'json',
@@ -14,6 +14,9 @@ $(".loading").css('display','none');
 		$(".doctor-address p").empty().append('<span>'+data.data['Data']['practice_address1']+'</span><span>'+data.data['Data']['practice_address2']+'</span><span>'+data.data['Data']['practice_state']+'</span><span>'+data.data['Data']['practice_city']+'</span><span>'+data.data['Data']['practice_zipcode']+'</span>');
 		$("#number_show").empty().append("Phone: "+data.data['Data']['practice_phone']);
 		getDoctors();
+},
+error: function(jqXHR, textStatus, errorThrown) {
+alert(textStatus + ': ' + errorThrown);
 }
 });
 	
