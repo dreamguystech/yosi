@@ -1,11 +1,11 @@
-$(document).ready(function(e) { alert(1);
+$(document).ready(function(e) { 
 	$(".loading").css('display','block');
 	$.ajax({
-        url:'https://dev.yosicare.com/calendarpage/mobile-app.php?page=get_practice',
+        url:'https://dev.yosicare.com/calendarpage/mobile-app.php',
         type:'POST',
         data:'',
 		dataType:'json',
-success:function(data){ alert(2);
+success:function(data){ 
 $(".loading").css('display','none');
 		$(".main-wrapper").css('opacity','1');
 		$("#PracticeId").val(data.data['Data']['practice_id']);
