@@ -1,7 +1,7 @@
 $(document).ready(function(e) {
 	$(".loading").css('display','block');
 	$.ajax({
-        url:'https://dev.yosicare.com/calendarpage/mobile-app.php?page=get_practice',
+        url:'http://dev.yosicare.com/calendarpage/mobile-app.php?page=get_practice',
         type:'POST',
         data:'',
 		dataType:'json',
