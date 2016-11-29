@@ -14,7 +14,7 @@
         <link href="css/bootstrap-datepicker.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <div class="main-wrapper">
+        <div class="main-wrapper" style="opacity:0;">
             <div class="header">
                 <div class="header-left">
                     <a href="" class="logo">
@@ -29,23 +29,19 @@
                 <div class="sidebar-inner slimscroll">
 					<div class="profile-widget">
 						<div class="profile-img">
-							<img alt="Doctor Name" src="images/user.jpg" class="img-responsive img-circle" width="150" height="150">
+							<img alt="Doctor Name" src="" class="img-responsive img-circle" width="150" height="150">
 						</div>
 						<div class="doctor-det">
 							<div class="doctor-info">
-								<h5>Yosi Demo</h5>
+								<h5></h5>
 								<!--<span>Practicing since 2012</span>-->
 							</div>
 							<div class="doctor-address">
 								<p>
-								<span>10 River RD</span>
-								<span>3P</span>
-								<span>NY</span>
-								<span>New York</span>
-								<span>10044</span></p>
+								</p>
 							</div>
 							<div class="doctor-phone">
-                                <span id="number_show" style="display:none;">Phone: 0987654321</span>
+                                <span id="number_show" style="display:none;"></span>
                                 <a href="javascript:ReverseDisplay('number_show')" class="add-html">Show Phone Number</a>
                             </div>
 						</div>
@@ -60,72 +56,7 @@
 								<h2 class="choose-provider">Choose Your Provider</h2>
 							<div class="doctor-carousel">
 								<div class="owl-carousel" id="doctor-carousel">
-									<a href="javascript:;" class="dr-link" onClick="select_doctor(1);">
-										<div class="doctor-widget">
-											<span class="dr-img-wrap">
-												<span class="doctor_img" style="background-image:url(https://dev.yosicare.com/calendar-api/public/img/1730.jpg) "></span>
-											</span>
-											<h4>Nelya Lobkova<br><span>General Podiatrist,Podiatric Surgeon</span></h4>
-										</div>
-									</a>
-									<a href="javascript:;" class="dr-link" onClick="select_doctor(1);">
-										<div class="doctor-widget">
-											<span class="dr-img-wrap">
-												<span class="doctor_img" style="background-image:url(https://dev.yosicare.com/calendar-api/public/img/1793.jpg) "></span>
-											</span>
-											<h4>Miguel Cunha<br><span>Podiatric Surgeon</span></h4>
-										</div>
-									</a>
-									<a href="javascript:;" class="dr-link" onClick="select_doctor(1);">
-										<div class="doctor-widget">
-											<span class="dr-img-wrap">
-												<span class="doctor_img" style="background-image:url(https://dev.yosicare.com/calendar-api/public/img/2970.jpg) "></span>
-											</span>
-											<h4>Neha&nbsp; Pathak<br><span>Podiatric Surgeon</span></h4>
-										</div>
-									</a>
-									<a href="javascript:;" class="dr-link" onClick="select_doctor(1);">
-										<div class="doctor-widget">
-											<span class="dr-img-wrap">
-												<span class="doctor_img" style="background-image:url(https://dev.yosicare.com/calendar-api/public/img/2971.jpg) "></span>
-											</span>
-											<h4>Elelta Hailemichael<br><span>Podiatric Surgeon</span></h4>
-										</div>
-									</a>
-									<a href="javascript:;" class="dr-link" onClick="select_doctor(1);">
-										<div class="doctor-widget">
-											<span class="dr-img-wrap">
-												<span class="doctor_img" style="background-image:url(https://dev.yosicare.com/calendar-api/public/img/5242.jpg) "></span>
-											</span>
-											<h4>Raphael Lilker<br><span>&nbsp; </span></h4>
-										</div>
-									</a>
-									<a href="javascript:;" class="dr-link" onClick="select_doctor(1);">
-										<div class="doctor-widget">
-											<span class="dr-img-wrap">
-												<span class="doctor_img" style="background-image:url(https://dev.yosicare.com/calendar-api/public/img/5243.jpg) "></span>
-											</span>
-											<h4>Sanaz Lalehparvar<br><span>&nbsp; </span></h4>
-										</div>
-									</a>
-									<a href="javascript:;" class="dr-link" onClick="select_doctor(1);">
-										<div class="doctor-widget">
-											<img src="images/doctor-img.png" class="img-circle img-thumbnail" alt="" title="" width="150" height="150">
-											<h4>Dr.Mark Leon<br><span>Anesthesiologist</span></h4>
-										</div>
-									</a>
-									<a href="javascript:;" class="dr-link" onClick="select_doctor(1);">
-										<div class="doctor-widget">
-											<img src="images/doctor-img2.png" class="img-circle img-thumbnail" alt="" title="" width="150" height="150">
-											<h4>Dr.Mark Leon<br><span>Anesthesiologist</span></h4>
-										</div>
-									</a>
-									<a href="javascript:;" class="dr-link" onClick="select_doctor(1);">
-										<div class="doctor-widget">
-											<img src="images/doctor-img3.png" class="img-circle img-thumbnail" alt="" title="" width="150" height="150">
-											<h4>Dr.Mark Leon<br><span>Anesthesiologist</span></h4>
-										</div>
-									</a>
+									
 								</div>
 							</div>
 							</div>
@@ -140,7 +71,7 @@
 						<div class="row">
 							<div class="col-xs-12">
 								<div class="page-title-section">
-									<h4 class="page-title" >Request an Appointment with <span id="updated_select_doctor">Nelya Lobkova</span> <span class="appointment-result" style="display:none">
+									<h4 class="page-title" >Request an Appointment with <span id="updated_select_doctor"></span> <span class="appointment-result" style="display:none">
 												<span class="selected_date" id="datepicker-example14"></span> <span id="selecttime_default">at</span>
                                                 <span class="selected_time" id="selected_time"></span>
 											</span></h4>
@@ -208,6 +139,9 @@
 										<h3>Appointment Details</h3>
 									</div>
 									<form id="appointment_form" method="post" class="">
+                                    	<input id="PracticeId" name="PracticeId" value="105701" type="hidden">
+                                        <input id="Address2" name="Address2" value="cheranma nagar" type="hidden">
+                                        <input id="DoctorId" name="DoctorId" value="1730" type="hidden">
 										<div class="form-body">
 											<div class="form-group">
 												<label>First Name</label>
@@ -261,13 +195,14 @@
                 </div>
             </div>
         </div>
+        <div class="loading" style="display:none;"></div>
          <div id="loading-spinner" class="modal fade success-modal" role="dialog"><img src="images/loader.gif" alt="" class="sent-img" width="32" height="32"> </div>
         <div id="appointment-sucess" class="modal fade success-modal" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-body text-center">
                         <img src="images/sent.png" alt="" class="sent-img" width="64" height="62">
-                        <h3>John Doe received the appointment request.</h3> 
+                        <h3></h3> 
                         <p>We will call you to confirm the appointment</p>
                         <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
                     </div>
@@ -282,6 +217,7 @@
         <script type="text/javascript" src="js/owl.carousel.min.js"></script>
         <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
         <script>
 		$(function () {
 			$('#datepicker-dob').datepicker({ 

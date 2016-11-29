@@ -1,10 +1,10 @@
-$('.slimscroll').slimscroll({
+/*$('.slimscroll').slimscroll({
 height: 'auto',
           position: 'right',
           size: "7px",
           color: '#ccc',
           wheelStep: 5
-});
+});*/
 	$(document).ready(function() {
          $('#datepicker-example14').Zebra_DatePicker({
 			 format: 'm/d/Y',
@@ -33,28 +33,31 @@ height: 'auto',
 			 var did= $("#DoctorId").val();
 			 var pid= $("#PracticeId").val();
 			 $("#selecttime_default").hide();
+			 $(".loading").css('display','block');
 			 $("#selected_time").html('');
-			 /*var url 	 = 'ajax/doctortiming.php'; 
 					$.ajax({
 						type:'post',
-						url:url,
+						url:'https://dev.yosicare.com/calendarpage/mobile-app.php?page=get_timing',
 						data:{id:pid,dr_id:did,cur_date:date},
 						dataType: 'json',
 					
 						success: function(data)
 						{
+							$(".loading").css('display','none');
 							if(data)
 							{
-								if(data.content.length>0){
+								if(data.data.length>0){
 								$("#dynamic_timelist").html('');
-								$("#dynamic_timelist").html(data.content);	
+									for(var i=0;i<data.data.length;i++){
+										$("#dynamic_timelist").append('<li id="'+i+'">'+data.data[i]['app_time']+'</li>');		
+									}
 								}
 								//$("#select_drlist").hide();	
 								//$(".modal-backdrop2").hide();	
 												
 							}
 						}
-					})*/
+					})
 
          });
 		 
@@ -133,16 +136,16 @@ height: 'auto',
 					var Appdate  = $.trim($('#datepicker-example14').html());
 					var AppTime  = $.trim($('#selected_time').html());
 					$("#appointment-sucess").modal('toggle');			
-					//var url 	  = 'ajax/addappointment.php'; 	
-					/*$.ajax({
+					$(".loading").css('display','block');
+					$.ajax({
 						type:'post',
-						url:url,
+						url:'https://dev.yosicare.com/calendarpage/mobile-app.php?page=add_appointment',
 						data:{FirstName:FirstName,LastName:LastName,Phone:Phone,Email:Email,Dob:Dob,PracticeId:PracticeId,DoctorId:DoctorId,Appdate:Appdate,AppTime:AppTime},
-						beforeSend: function() {
-							$('.request_btn').html('<img src="images/btn-loader.svg" width="24"/>');
-						},
 						success: function(data)
 						{ 
+							$(".loading").css('display','none');
+							
+							$("#appointment-sucess").modal('show');
 							if(data)
 							{ 
 								$('#appointment_form')[0].reset();
@@ -151,7 +154,6 @@ height: 'auto',
 								$("#selecttime_default").hide();
 								$("#response_success").html(data);
 								$('.conformed_time').removeClass('active');
-								$("#appointment-sucess").modal('toggle');	
 																	
 							}
 							else {
@@ -161,12 +163,13 @@ height: 'auto',
 								$("#response_success").html(data);
 								$("#selecttime_default").hide();
 								$('.conformed_time').removeClass('active');
-								$("#appointment-sucess").modal('toggle');
 								
 							}
+							setTimeout(function(){$("#appointment-sucess").modal('hide');},2000);
+							$('body').animate({ scrollTop: "100px" }, 500);
 							 $('.request_btn').html('Request Appointment');
 						}
-					})*/
+					})
 				}else{
 					alert('Please select a time');
 				}
@@ -208,7 +211,7 @@ height: 'auto',
 			$('#datepicker-dob').parent().removeClass('has-error');
 		});
 		
-		$("#dynamic_timelist").on("click",".conformed_time", function(){
+		$(document).on("click","#dynamic_timelist li", function(){
 		 	 $('.conformed_time').removeClass('active');
 			 $(this).addClass('active');
 			 var as= $(this).html(); 
