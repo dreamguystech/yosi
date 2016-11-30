@@ -1,7 +1,7 @@
 $(document).ready(function(e) {
 	$(".loading").css('display','block');
 
-	$.post('https://dev.yosicare.com/calendarpage/mobile-app.php?page=get_practice',{},function(data){ alert(1); alert(data.data['Data']['practice_id']);
+	$.post('https://dev.yosicare.com/calendarpage/mobile-app.php?page=get_practice',{},function(data){ 
 		$(".loading").css('display','none');
 		$(".main-wrapper").css('opacity','1');
 		$("#PracticeId").val(data.data['Data']['practice_id']);
