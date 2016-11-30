@@ -1,6 +1,6 @@
 $(document).ready(function(e) {
-	$(".loading").css('display','block');
-	$.post('https://dev.yosicare.com/calendarpage/mobile-app.php?page=get_practice',{},function(data){
+	//$(".loading").css('display','block');
+	/*$.post('https://dev.yosicare.com/calendarpage/mobile-app.php?page=get_practice',{},function(data){
 		$(".loading").css('display','none');
 		$(".main-wrapper").css('opacity','1');
 		$("#PracticeId").val(data.data['Data']['practice_id']);
@@ -10,7 +10,19 @@ $(document).ready(function(e) {
 		$("#number_show").empty().append("Phone: "+data.data['Data']['practice_phone']);
 		getDoctors();
 	},"json");
+	*/
 	
+	$.ajax({
+	        "method": "POST",
+	        "url": 'https://dev.yosicare.com/calendarpage/mobile-app.php?page=get_practice',
+	        dataType: 'json',
+	        crossDomain: true,
+	          error: function (jqXHR, textStatus, errorThrown) {
+	            alert('new textStatus=' + textStatus + ' errorThrown=' + errorThrown);
+	        },
+	        success: function (response) { alert("ok");
+	}
+	});
 });
 
 function getDoctors(){
