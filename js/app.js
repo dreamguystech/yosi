@@ -1,5 +1,29 @@
 $(document).ready(function(e) {
+<<<<<<< HEAD
 	//$(".loading").css('display','block');
+=======
+	$(".loading").css('display','block');
+	$.ajax({
+        url:'http://dev.yosicare.com/calendarpage/mobile-app.php?page=get_practice',
+        type:'POST',
+        data:'',
+		dataType:'json',
+success:function(data){ 
+$(".loading").css('display','none');
+		$(".main-wrapper").css('opacity','1');
+		$("#PracticeId").val(data.data['Data']['practice_id']);
+		$(".doctor-info").empty().append(data.data['Data']['practice_name']);
+		$(".profile-img img").attr('src',data.data['Data']['practice_logo']);
+		$(".doctor-address p").empty().append('<span>'+data.data['Data']['practice_address1']+'</span><span>'+data.data['Data']['practice_address2']+'</span><span>'+data.data['Data']['practice_state']+'</span><span>'+data.data['Data']['practice_city']+'</span><span>'+data.data['Data']['practice_zipcode']+'</span>');
+		$("#number_show").empty().append("Phone: "+data.data['Data']['practice_phone']);
+		getDoctors();
+},
+error: function(jqXHR, textStatus, errorThrown) {
+alert(textStatus + ': ' + errorThrown);
+}
+});
+	
+>>>>>>> origin/master
 	/*$.post('https://dev.yosicare.com/calendarpage/mobile-app.php?page=get_practice',{},function(data){
 		$(".loading").css('display','none');
 		$(".main-wrapper").css('opacity','1');
@@ -9,8 +33,12 @@ $(document).ready(function(e) {
 		$(".doctor-address p").empty().append('<span>'+data.data['Data']['practice_address1']+'</span><span>'+data.data['Data']['practice_address2']+'</span><span>'+data.data['Data']['practice_state']+'</span><span>'+data.data['Data']['practice_city']+'</span><span>'+data.data['Data']['practice_zipcode']+'</span>');
 		$("#number_show").empty().append("Phone: "+data.data['Data']['practice_phone']);
 		getDoctors();
+<<<<<<< HEAD
 	},"json");
 	*/
+=======
+	},"json");*/
+>>>>>>> origin/master
 	
 	$.ajax({
 	        "method": "POST",
