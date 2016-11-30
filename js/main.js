@@ -224,7 +224,7 @@ height: 'auto',
 			 $(".appointment-result").show();
 			 $("#appointment_after_part").show();
 			 $(".widget-box").removeClass('date_selected');
-			 $("body").animate({ scrollTop: $('#appointment_form').position().top }, 2000);
+			 //$("body").animate({ scrollTop: $('#appointment_after_part').position().top }, 2000);
 		});	
 
 		$(".time-list li").click(function(){
