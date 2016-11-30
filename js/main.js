@@ -135,7 +135,7 @@ height: 'auto',
 					var DoctorId  = $.trim($('#DoctorId').val());
 					var Appdate  = $.trim($('#datepicker-example14').html());
 					var AppTime  = $.trim($('#selected_time').html());
-					$("#appointment-sucess").modal('toggle');			
+					//$("#appointment-sucess").modal('toggle');			
 					$(".loading").css('display','block');
 					$.ajax({
 						type:'post',
